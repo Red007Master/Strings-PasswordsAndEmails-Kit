@@ -15,10 +15,10 @@ namespace CharSniffer2._0
             Console.ForegroundColor = ConsoleColor.Green;
 
             Publics.OutputFileMarker = "[CharSnifferOutput]";
-            Publics.SearchedString = "a.milon".ToLower();
+            Publics.SearchedString = "test".ToLower();
 
-            Publics.Dirs.InputFolder = @"C:\RedSoft";
-            Publics.Dirs.OutputTxt = $@"C:\RedSoft\Output\CharSniffer\{Publics.SearchedString + Publics.OutputFileMarker}.txt";
+            Publics.Dirs.InputFolder = @"C:\test";
+            Publics.Dirs.OutputTxt = $@"C:\CharSniffer\{Publics.SearchedString + Publics.OutputFileMarker}.txt";
             Publics.Dirs.TempFolder = Path.GetTempPath();
 
             Publics.FilesToReadArray = RedTools.Files.CollectFileArrayFromDir(Publics.Dirs.InputFolder, "txt", true);
